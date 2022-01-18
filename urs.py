@@ -59,8 +59,6 @@ pygame.display.set_caption('Z-pong')
 
 light_grey = (200,200,200)
 bg_color = pygame.Color('grey12')
-
-
 ball = pygame.Rect(screen_width / 2 - 15, screen_height / 2 - 15, 30, 30)
 player = pygame.Rect(screen_width - 20, screen_height / 2 - 70, 10,140)
 opponent = pygame.Rect(10, screen_height / 2 - 70, 10,140)
@@ -71,7 +69,8 @@ opponent_speed = 7
 player_score = 0
 opponent_score = 0
 basic_font = pygame.font.Font('freesansbold.ttf', 32)
-
+pong_sound = pygame.mixer.Sound("oh.mp3")
+score_sound = pygame.mixer.Sound("dead.mp3")
 
 while True:
 	for event in pygame.event.get():
