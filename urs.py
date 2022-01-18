@@ -28,7 +28,7 @@ def p_anime():
 	if player.bottom >= screen_height:
 		player.bottom = screen_height
 
-def opponent_ai():
+def opp_anime():
 	if opponent.top < ball.y:
 		opponent.y += opponent_speed
 	if opponent.bottom > ball.y:
@@ -92,7 +92,7 @@ while True:
 	
 	anime()
 	p_anime()
-	opponent_ai()
+	opp_anime()
 	screen.fill(bg_color)
 	pygame.draw.rect(screen, light_grey, player)
 	pygame.draw.rect(screen, light_grey, opponent)
