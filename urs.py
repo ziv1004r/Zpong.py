@@ -54,7 +54,7 @@ clock = pygame.time.Clock()
 screen_width = 1280
 screen_height = 960
 screen = pygame.display.set_mode((screen_width,screen_height))
-pygame.display.set_caption('Pong')
+pygame.display.set_caption('Z-pong')
 
 
 light_grey = (200,200,200)
@@ -102,6 +102,7 @@ while True:
 	screen.blit(player_text,(660,470))
 	opponent_text = basic_font.render(f'{opponent_score}',False,light_grey)
 	screen.blit(opponent_text,(600,470))
+
 
 	pygame.display.flip()
 	clock.tick(60)
